@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv=!"Content Type" content="text/html; charset= iso-8859-1">
+    <title> :: Formulário </title>
+
+    <style type="text/javascript">
+    var texto = "Faça sua busca aqui!";
+    
+	function preenche() {
+    var valor=document.getElementById("busca").value;
+    if(valor == "") {
+        document.getElementById("busca").value=texto;
+    }
+    }
+
+    function limpa(){
+    var valor=document.getElementById("busca").value;   
+    if(valor == texto) {
+        document.getElementById("busca").value=' ';
+
+    }
+    }
+    </script>
+
+    style type="text/css">
+	
+    input[type="text"] {
+	border:thin solid #ccc;
+	font-weihgth: bold;
+    width: 70px;
+    padding: 6px;
+    border thin solid #ccc;
+    color: #999;
+    font-style:italic;
+	font-weihgth:bold;
+   }
+   
+    input[type="text"] : focus {
+	color: #000;
+	font-style: normal;
+	font-weight:bold;
+	}
+	
+	input[type="submit"]:{
+	border: nome;
+	font-weight: bold;
+	width: 200px;
+	padding: 6px;
+	background:#069f;
+	color:#fff;
+}
+
+input[type="submit"]:hover;{
+background:#09f;
+}
+
+
+    </style>
+</head>
+
+<body onload="preenche();">
+    <form action="" method="get">
+    <input type="text" onclick="limpa();" onblur="preenche();" name="palavra" id="busca" value=" Faça sua busca aqui">
+    <input type="submit" value="Buscar">
+    </form>
+</body>
+
+</html>
